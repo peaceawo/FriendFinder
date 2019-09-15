@@ -1,0 +1,24 @@
+{
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "### Description It is similar to a Penpal app that I had growing up or a dating app these days. This is a full-stack site that will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peaceawo/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peaceawo/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/peaceawo/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
