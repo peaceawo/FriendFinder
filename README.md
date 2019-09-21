@@ -10,4 +10,4 @@ It is similar to a Penpal app that I had growing up or a dating app these days. 
 - JavaScript
 -Express to handle routing.
 
-[Click Here to Find a BFF](https://www.google.com)
+[Click Here to Find a BFF](https://friendfinderpa-2831.herokuapp.com/)
