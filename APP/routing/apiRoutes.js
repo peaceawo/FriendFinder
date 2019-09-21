@@ -9,34 +9,32 @@ module.exports = function(app) {
   app.post("/api/friends", function(req, res) {
     var surveyResults = req.body;
 
-    // convertStringToInt(surveyResults.scores);
-
+    // parseInt Scores
+    for (var i = 0; i < surveyResults.scores.length; i++) {
+      surveyResults.scores[i] = parseInt(surveyResults.scores[i]);
+    }
     var newFriendScores = surveyResults.scores;
-    var friendMatch = "";
+    var friendMatch = 0;
     var frendMatchImg = "";
 
-    var totalDelta = 1000;
     var delta = 0;
+    var totalDelta = 1000;
 
     //Loooping friendsArray:
     for (var i = 0; i < friendsData.length; i++) {
       //Looping scores:
       for (var j = 0; j < friendsData[i].scores; j++) {
-        delta += Math.abs(friendsData[i].scores[j] - newFriendScores);
+        delta += Math.abs(surveyResults.scores[j] - friendsData[i].scores[j]);
       }
-      if (delta <= totalDelta) {
-        //There is a problem here. NewFriendName herein defined is not in anyway connected to delta<=totalDelta above...
-        newFriendName = friendsData[i].name;
-        newFriendpic = friendsData[i].photo;
+
+      if (delta < totalDelta) {
+        friendMatch = i;
+        totalDelta = delta;
       }
     }
 
     friendsData.push(surveyResults);
-    res.json({
-      status: true,
-      friendMatch: newFriendName,
-      friendMatchImg: newFriendpic
-    });
+    res.json(friendsData[friendMatch]);
   });
 
   // // // Create New Friends - takes in JSON input

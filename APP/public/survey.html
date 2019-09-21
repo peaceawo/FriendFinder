@@ -1,227 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Friend FriendFinder</title>
-    <!--Bootstrap-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <!--JQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!--Font Awesome Glyphicon-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>Friend FriendFinder</title>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <!--JQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <body>
-    <div class="container">
-      <h2><b>Survey Questions</b></h2>
-      <hr />
-      <h3><b>About You</b></h3>
-      <h4>Name (Required)</h4>
-      <input type="text" id="name" class="form-control" required />
+  <!--Font Awesome Glyphicon-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
+</head>
 
-      <h4>Link to Photo Image (Required)</h4>
-      <input type="text" id="photo" class="form-control" required />
-      <hr />
+<body>
+  <div class="container">
+    <h2><b>Survey Questions</b></h2>
+    <hr />
+    <h3><b>About You</b></h3>
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="form-control" required />
 
-      <h3><b>Question 1</b></h3>
-      <h4>Kansas Chiefs are going to win the super bowl this year</h4>
-      <select class="chosen-select" id="question1">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h4>Link to Photo Image (Required)</h4>
+    <input type="text" id="photo" class="form-control" required />
+    <hr />
 
-      <h3><b>Question 2</b></h3>
-      <h4>Esther is the only peroson to complete a no sugar diet</h4>
-      <select class="chosen-select" id="question2">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h3><b>Question 1</b></h3>
+    <h4>Kansas Chiefs are going to win the super bowl this year</h4>
+    <select class="chosen-select" id="question1">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <h3><b>Question 3</b></h3>
-      <h4>Sometimes I wish my pet could talk</h4>
-      <select class="chosen-select" id="question3">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h3><b>Question 2</b></h3>
+    <h4>Esther is the only peroson to complete a no sugar diet</h4>
+    <select class="chosen-select" id="question2">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <h3><b>Question 4</b></h3>
-      <h4>
-        Solitude is fine but you need someone to tell that solitude is fine
-      </h4>
-      <select class="chosen-select" id="question4">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h3><b>Question 3</b></h3>
+    <h4>Sometimes I wish my pet could talk</h4>
+    <select class="chosen-select" id="question3">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <h3><b>Question 5</b></h3>
-      <h4>Our culture made a virtue of living only as extroverts</h4>
-      <select class="chosen-select" id="question5">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h3><b>Question 4</b></h3>
+    <h4>
+      Solitude is fine but you need someone to tell that solitude is fine
+    </h4>
+    <select class="chosen-select" id="question4">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <h3><b>Question 6</b></h3>
-      <h4>Everything is nothing with a twist</h4>
-      <select class="chosen-select" id="question6">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h3><b>Question 5</b></h3>
+    <h4>Our culture made a virtue of living only as extroverts</h4>
+    <select class="chosen-select" id="question5">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <h3><b>Question 7</b></h3>
-      <h4>
-        When you eliminate all which is imposible, then whatever remains,
-        however improbable, must be the truth
-      </h4>
-      <select class="chosen-select" id="question7">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h3><b>Question 6</b></h3>
+    <h4>Everything is nothing with a twist</h4>
+    <select class="chosen-select" id="question6">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <h3><b>Question 8</b></h3>
-      <h4>Can this quiz be over already?</h4>
-      <select class="chosen-select" id="question8">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h3><b>Question 7</b></h3>
+    <h4>
+      When you eliminate all which is imposible, then whatever remains,
+      however improbable, must be the truth
+    </h4>
+    <select class="chosen-select" id="question7">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <h3><b>Question 9</b></h3>
-      <h4>Forrest Gump is the best movie ever made</h4>
-      <select class="chosen-select" id="question9">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h3><b>Question 8</b></h3>
+    <h4>Can this quiz be over already?</h4>
+    <select class="chosen-select" id="question8">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <h3><b>Question 10</b></h3>
-      <h4>Don't cry because it's over, smile because it happened.</h4>
-      <select class="chosen-select" id="question10">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
+    <h3><b>Question 9</b></h3>
+    <h4>Forrest Gump is the best movie ever made</h4>
+    <select class="chosen-select" id="question9">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <br /><br />
-      <button
-        type="button"
-        class="btn btn-primary btn-lg btn-block"
-        id="submit"
-        data-toggle="modal"
-        data-target="#exampleModal"
-      >
-        <i class="fa fa-check-circle"></i> Submit
-      </button>
+    <h3><b>Question 10</b></h3>
+    <h4>Don't cry because it's over, smile because it happened.</h4>
+    <select class="chosen-select" id="question10">
+      <option value=""></option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                YOUR NEW FRIEND
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h4>Your new friend is: <span id="friendname"></span></h4>
-              <img id="friendphoto" />
-            </div>
+    <br /><br />
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal"
+      data-target="#exampleModal">
+      <i class="fa fa-check-circle"></i> Submit
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              YOUR NEW FRIEND
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4><span id="friendname"></span></h4>
+            <img id="friendphoto" src="#" />
           </div>
         </div>
       </div>
-      <hr />
-      <footer class="footer">
-        <div class="container">
-          <p>
-            <a href="/api/friends">API Friends List</a> |
-            <a href="https://github.com/peaceawo/FriendFinder">GitHub Repo</a> |
-          </p>
-        </div>
-      </footer>
     </div>
+    <hr />
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/friends">API Friends List</a> |
+          <a href="https://github.com/peaceawo/FriendFinder">GitHub Repo</a> |
+        </p>
+      </div>
+    </footer>
+  </div>
 
-    <!--Modal-->
-  </body>
+  <!--Modal-->
+</body>
 
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
-  <script type="text/javascript">
-    $("#submit").on("click", function(event) {
-      event.preventDefault();
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
+<script type="text/javascript">
+  $("#submit").on("click", function (event) {
+    event.preventDefault();
+
+    //Validate the input from the user
+    var valid = true;
+    if ($("#name").val() === "" || $("#photo").val() === "") {
+      valid = false;
+    } else if (
+      $("#question1").val() === "empty" ||
+      $("#question2").val() === "empty" ||
+      $("#question3").val() === "empty" ||
+      $("#question4").val() === "empty" ||
+      $("#question5").val() === "empty" ||
+      $("#question6").val() === "empty" ||
+      $("#question7").val() === "empty" ||
+      $("#question8").val() === "empty" ||
+      $("#question9").val() === "empty" ||
+      $("#question10").val() === "empty"
+    ) {
+      valid = false;
+    }
+
+    if (valid === true) {
       var newFriend = {
         name: $("#name")
           .val()
@@ -247,10 +239,10 @@
 
       //Ajax call for receiving response after POST req
 
-      $.post("/api/friends", newFriend, function(data) {
-        //Modal Values
+      $.post("/api/friends", newFriend, function (data) {
+        console.log(data.photo);
         $("#friendname").text(data.name);
-        $("friendphoto").attr("src", data.photo);
+        $("#friendphoto").attr("src", data.photo);
         $("#exampleModal").modal("toggle");
         $("#exampleModal").modal("handleUpdate");
 
@@ -259,6 +251,8 @@
         $("#photo").val("");
         $(".chosen-select").val("");
       });
-    });
-  </script>
-</html>
+    } else {
+      alert("Survey is incomplete");
+    }
+  });
+</script>
